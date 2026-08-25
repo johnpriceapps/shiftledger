@@ -1,0 +1,29 @@
+name: Feature request
+description: Suggest a product improvement for ShiftLedger.
+title: "[Idea]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for sharing an idea. This board is public, so do not include personal schedules, earnings, workplace names, or other sensitive information.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would this solve?
+      description: Describe the situation using a generic example.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would help?
+      description: Describe the outcome you would like, not only an implementation.
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy check
+      options:
+        - label: I confirm that this public request contains no personal, work, pay, account, or purchase information.
+          required: true
